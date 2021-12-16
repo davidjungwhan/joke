@@ -1,0 +1,146 @@
+/*body {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    background-color: #363636;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    min-height: 100vh;*/
+/*}*/
+
+body {
+    background-color: #363636;
+}
+
+.joke {
+    position: absolute;
+    width: 1000px;
+    height: 300px;
+    left: calc(50% - 1000px/2);
+    top: calc(50% - 300px/2 + 31px);
+
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 47px;
+
+    color: #FEFEFE;
+}
+
+.container {
+    position: relative;
+    left: calc(50% - 175px/2 - 412.5px);
+    top: calc(50% - 45px/2 - 235.5px);
+    margin: auto;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+.container div
+{
+    margin: 5px;
+}
+
+.container div label
+{
+    cursor: pointer;
+}
+
+.container div label input[type="checkbox"]
+{
+    display: none;
+}
+
+.container div label input[type="submit"]
+{
+    display: none;
+}
+
+.container div label span
+{
+    position: relative;
+    display: inline-block;
+    /*background: #777777;*/
+    padding: 13px 20px;
+    color: #FEFEFE;
+    font-size: 18px;
+    transition: 0.2s;
+    user-select: none;
+    overflow: hidden;
+    border: 1px solid #777777;
+    box-sizing: border-box;
+    font-family: Rokkitt;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.container div label input[type="checkbox"]:checked ~ span
+{
+    background: #777777;
+}
+
+#misc  {
+    position: absolute;
+    left: calc(50% - 150px/2 - 435px);
+    top: calc(50% - 40px/2 - 263px);
+}
+
+#dark  {
+    position: absolute;
+    left: calc(50% - 80px/2 - 315px);
+    top: calc(50% - 40px/2 - 263px);
+}
+
+#programming {
+    position: absolute;
+left: calc(50% - 150px/2 - 193px);
+top: calc(50% - 40px/2 - 263px);
+}
+
+#pun {
+    position: absolute;
+    left: calc(50% - 70px/2 - 80px);
+    top: calc(50% - 40px/2 - 263px);
+}
+
+.button {
+    position: absolute;
+    left: calc(50% - 120px/2);
+    top: calc(50% - 45px/2 + 284.5px);
+    margin: auto;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+.button div
+{
+    margin: 10px;
+}
+
+.button div label
+{
+    cursor: pointer;
+}
+
+.button div label input[type="submit"]
+{
+    display: none;
+}
+
+.button div label span
+{
+    position: relative;
+    display: inline-block;
+    /*background: #777777;*/
+    padding: 15px 30px;
+    color: #FEFEFE;
+    font-size: 23px;
+    transition: 0.2s;
+    user-select: none;
+    overflow: hidden;
+    border: 2px solid #777777;
+    box-sizing: border-box;
+    font-family: Rokkitt;
+    font-style: normal;
+    font-weight: normal;
+}

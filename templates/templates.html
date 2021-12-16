@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rokkitt:wght@300&display=swap" rel="stylesheet">
+        <title>{{title}}</title>
+    </head>
+    <body>
+            <form action="filter" method="get">
+                <div class="container" id="misc">
+                    <div>
+                        <label>
+                            <input type="checkbox" name="filter_type" value="miscellaneous" id="miscellaneous" {%if "miscellaneous" in category%}checked{%endif%}>
+                            <span>Miscellaneous</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="container" id="dark">
+                    <div>
+                        <label>
+                            <input type="checkbox" name="filter_type" value="dark" id="dark" {%if "dark" in category%}checked{%endif%}>
+                            <span>Dark</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="container" id="programming">
+                    <div>
+                        <label>
+                            <input type="checkbox" name="filter_type" value="programming" id="programming" {%if "programming" in category%}checked{%endif%}>
+                            <span>Programming</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="container" id="pun">
+                    <div>
+                        <label>
+                            <input type="checkbox" name="filter_type" value="pun" id="pun" {%if "pun" in category%}checked{%endif%}>
+                            <span>Pun</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="button" id="yes">
+                    <div>
+                        <label>
+                            <input type="submit" name="Yes" value="Yes">
+                            <span>&#8220;Yes&#8221;</span>
+                        </label>
+                    </div>
+                </div>
+            </form>
+            <div class="joke">
+                {{joke}}
+            </div>
+
+
+
+
+
+<!--            <script>-->
+<!--                for (var i = 0; i < {{category}}.length; i++) {-->
+<!--                    document.getElementById({{category}}[i]).checked = true;-->
+<!--                }-->
+<!--            </script>-->
+
+<!--    <div class="misc_box">-->
+<!--    </div>-->
+
+<!--    <div class="misc">-->
+<!--        Miscellaneous-->
+<!--    </div>-->
+
+<!--    <div class = "container_dark">-->
+<!--        <form action="" method="post">-->
+<!--            <input type="checkbox" name="favorite1" value="chocolate" style="opacity:0"/>-->
+<!--        </form>-->
+<!--    </div>-->
+
+<!--    <div class = "container_programming">-->
+<!--        <form action="" method="post">-->
+<!--            <input type="checkbox" name="favorite2" value="vanilla" />-->
+<!--        </form>-->
+<!--    </div>-->
+
+<!--    <div class = "container">-->
+<!--        <input type="radio" name="size">-->
+<!--        <label>Large</label>-->
+<!--    </div>-->
+
+<!--    <input type="button" value="Inset Border" style="border-style:inset;" />-->
+<!--    <input type="submit" value="Go" name="gobtn"/></form>-->
+
+    </body>
+</html>
